@@ -1,7 +1,4 @@
 
-
-
-
 // animate only once
 
 // document.addEventListener('DOMContentLoaded', () => {
@@ -75,4 +72,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Listen to scroll events
   window.addEventListener('scroll', handleScroll);
+});
+
+
+//signin
+document.getElementById('signin').addEventListener('click', function(){
+  window.location.href = 'signin.html';
 });

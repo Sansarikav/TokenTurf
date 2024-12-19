@@ -4,10 +4,12 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-      
-        "build.css": "npx tailwindcss -i ./src/input.css -o ./dist/style.css --watch"
+    "build.css": "npx tailwindcss -i ./src/input.css -o ./dist/style.css --watch"
   },
   "devDependencies": {
     "vite": "^6.0.1"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
   }
 }

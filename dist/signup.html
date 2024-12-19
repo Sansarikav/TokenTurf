@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="othercss.css" />
+
+  <link rel="stylesheet" href="style.css" />
+    <!-- css -->
+    <style>
+        body {
+            background-color: #1e293b;
+            /* Dark Slate Gray */
+            font-family: Arial, sans-serif;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .form-container {
+            background: #334155;
+            /* Slate */
+            padding: 20px 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .form-container h1 {
+            margin-bottom: 20px;
+        }
+
+        .form-container input[type="email"],
+        .form-container input[type="password"],
+        .form-container input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #64748b;
+            /* Light Slate */
+            border-radius: 4px;
+            outline: none;
+            background: #1e293b;
+            color: white;
+        }
+
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            background: #3b82f6;
+            /* Blue */
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .form-container button:hover {
+            background: #2563eb;
+            /* Darker Blue */
+        }
+
+        .form-container .signin {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        .form-container .signin a {
+            color: #3b82f6;
+            text-decoration: none;
+        }
+
+        .form-container .signin a:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav>
+        <div
+            class="navbar transparent bg-transparent z-20 text-white fixed top-0 h-20 px-8 md:px-14 lg:px-[120px] items-center justify-between w-full flex">
+            <div class="block ">
+                <div class="text-white text-[38px]  font-bold logo">
+                    <a href="index.html">
+
+                        TOKENTURF
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="form-container">
+        <h1>Sign Up</h1>
+        <form id="signup-form">
+            <input type="text" id="name" placeholder="Full Name" required />
+            <input type="email" id="email" placeholder="Email" required />
+            <input type="password" id="password" placeholder="Password (min 8 chars)" minlength="8" required />
+            <input type="password" id="confirm-password" placeholder="Confirm Password" minlength="8" required />
+            <button type="submit">Sign Up</button>
+        </form>
+        <div class="signin">
+            Already have an account? <a href="signin.html">Sign In</a>
+        </div>
+    </div>
+    <script src="signup.js"></script>
+</body>
+
+</html>
