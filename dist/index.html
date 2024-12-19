@@ -1,0 +1,280 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TokenTurf</title>
+  <link rel="stylesheet" href="othercss.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class=" bg-slate-800">
+
+
+  <section class="main-container relative  flex flex-col">
+    <!-- <img class="object-fill  w-full h-full" src="assets/images/main-bg2.avif" alt=""> -->
+
+
+
+    <div class="css-slideshow">
+      <div class="slide" style="background-image: url('assets/images/image1.jpeg');"></div>
+      <div class="slide" style="background-image: url('assets/images/image2.jpeg');"></div>
+      <div class="slide" style="background-image: url('assets/images/image3.jpeg');"></div>
+    </div>
+
+
+
+
+
+    <!-- navbar section starts here -->
+    <nav>
+      <div
+        class="navbar transparent bg-transparent z-20 text-white fixed top-0 h-20 px-8 md:px-14 lg:px-[120px] items-center justify-between w-full flex">
+        <div class="block ">
+          <div class="text-white text-[38px]  font-bold logo">
+          <a href="#">
+
+            TOKENTURF
+          </a>
+          </div>
+
+        </div>
+
+
+        <div class="flex">
+
+
+          <ul id="nav-content"
+            class="lg:flex gap-4 items-center font-semibold tracking-wider lg:text-[15px] mr-4 md:text-[10px]">
+            <li class="links relative">
+              <a href="#whyus">Why us?</a>
+            </li>
+            <li class="links relative">About us</li>
+            <li class="links relative">
+              <a href="#services">
+              Our Services
+
+              </a>
+            </li>
+            <li class="links relative">
+              <a href="#contactus">
+
+                Contact Us
+              </a>
+            </li>
+          </ul>
+
+
+
+          <div>
+            <img class="hidden" id="menu-btn"
+              src="https://cdn.prod.website-files.com/64f9d86c3da1bd10b13c772c/659ea8d569be4284e5cfbc83_PRIMARY%20NAV%20ITEM.svg"
+              alt="" />
+          </div>
+
+          <div id="signin"
+            class="md:flex mr-2 items-center justify-evenly py-3  bg-black  w-[124px] text-white rounded-full hidden">
+            <div>
+              <img src="assets/images/whiteArrow.svg" alt="" />
+            </div>
+            <div class="font-semibold">SIGN IN</div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <!-- navbar section ends here -->
+
+
+</section>
+
+
+
+
+
+
+
+
+    <!-- text over image section starts here -->
+    <section class="text-section">
+      <div class="main text-overImage  w-full">
+        <!-- <div class=" w-full"> -->
+        <div class="bg-[#000000a7] flex flex-col items-center rounded-xl p-5">
+          <h1 class="text-[40px] text-white font-sans">
+            Revolutionizing Real Estate Ownership with Blockchain
+          </h1>
+
+          <div class="cursor-pointer hover:text-blue-50">Learn More</div>
+        </div>
+      </div>
+      <!-- </div> -->
+    </section>
+    <!-- text over image ends here -->
+
+  </section>
+
+
+  <!-- our services starts here -->
+  <section id="services" class="bg-slate-900 services-section">
+    <h2 class="text-gray-300">Our Services</h2>
+    <div class="services-container">
+      <div class="service-card">
+        <div class="icon">&#128736;</div>
+        <h3>Blockchain-Based Property Listings</h3>
+        <p>List your property securely on the blockchain with complete transparency and immutability.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon">&#128179;</div>
+        <h3>Smart Contract Transactions</h3>
+        <p>Automate property transactions using smart contracts for a trustless and efficient experience.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon">&#128200;</div>
+        <h3>Tokenized Real Estate</h3>
+        <p>Invest in tokenized real estate assets for fractional ownership and improved liquidity.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon">&#128176;</div>
+        <h3>DeFi Integration</h3>
+        <p>Access decentralized finance tools for real estate loans and mortgages without intermediaries.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon">&#128273;</div>
+        <h3>Secure Property Verification</h3>
+        <p>Ensure the authenticity of property ownership and documentation using blockchain records.</p>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- our services ends here -->
+
+
+
+
+
+  <!-- Contact us section starts here  -->
+
+
+
+
+
+
+  <form id="contactus">
+    <div class="flex overflow-hidden  mt-10 pb-32 max-w-2xl h-auto   mx-auto ">
+
+      <!-- left side of form -->
+      <div class="space-y-6 bg-slate-700 w-[20rem] text-gray-200 p-6   text-wrap  ">
+
+        <h1 class="text-3xl font-bold text-slate-300">Write Us</h1>
+        <!-- Name Field -->
+        <div>
+          <!-- <label for="name" class="block text-sm font-medium text-gray-300 mb-1">Your </label> -->
+          <input type="text" id="name" name="name"
+            class="block w-full border border-gray-600 outline-none rounded-md shadow-sm bg-gray-900 text-gray-200 px-4 py-2 focus:ring-blue-500 focus:border-blue-500"
+            placeholder="Name" required>
+        </div>
+        <!-- Email Field -->
+        <div>
+          <!-- <label for="email" class="block text-sm font-medium text-gray-300 mb-1"> Address</label> -->
+          <input type="email" id="email" name="email"
+            class="block w-full border border-gray-600 outline-none rounded-md shadow-sm bg-gray-900 text-gray-200 px-4 py-2 focus:ring-blue-500 focus:border-blue-500"
+            placeholder="Email" required>
+        </div>
+        <!-- Subject Field -->
+        <div>
+          <label for="subject" class="block text-sm font-medium text-gray-300 mb-1"></label>
+          <input type="text" id="subject" name="subject"
+            class="block w-full border border-gray-600 outline-none rounded-md shadow-sm bg-gray-900 text-gray-200 px-4 py-2 focus:ring-blue-500 focus:border-blue-500"
+            placeholder="Subject" required>
+        </div>
+        <!-- Message Field -->
+        <div>
+          <label for="message" class="block text-sm font-medium text-gray-300 mb-1"></label>
+          <textarea id="message" name="message" rows="5"
+            class="block w-full border border-gray-600 outline-none rounded-md shadow-sm bg-gray-900 text-gray-200 px-4 py-2 focus:ring-blue-500 focus:border-blue-500"
+            placeholder="Write your message here..." required></textarea>
+        </div>
+        <!-- Submit Button -->
+        <div class="text-center">
+          <button type="submit"
+            class="bg-blue-600 text-white font-medium py-2 px-6 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">Send
+            Message</button>
+        </div>
+      </div>
+      <!-- left side of form ends here -->
+
+      <!-- right side of form -->
+      <div class="bg-slate-900 flex flex-col justify-center items-center   w-[20rem] p-6  right-side">
+
+
+
+        <div>
+
+          <h2 class="text-2xl font-bold mb-4 text-slate-300">Contact Information</h2>
+          <p class="text-gray-500">We are open for any suggestion or question.</p>
+        </div>
+
+
+        <div class="pt-5 w-full h-full text-slate-300 flex flex-col gap-8">
+
+          <!-- Name Field -->
+          <div>
+            <p class="flex right-links items-center">
+              <img src="assets/images/location-logo.svg" alt="">
+              <span class="font-bold mr-2 ">Address :</span>
+              address
+
+            </p>
+          </div>
+          <div>
+            <p class="flex right-links items-center">
+              <img src="assets/images/call-logo.svg" alt="">
+              <span class="font-bold mr-2 ">Phone :</span>
+              phone number
+
+            </p>
+          </div>
+          <div>
+            <p class="flex right-links items-center">
+              <img src="assets/images/mail-logo.svg" alt="">
+              <span class="font-bold mr-2 ">Email :</span>
+              email id
+
+            </p>
+          </div>
+
+          <div>
+            <p class="flex right-links items-center">
+              <img id="git-logo" src="assets/images/github-logo.svg" alt="">
+              <span class="font-bold mr-2 ">Github :</span>
+              github ki link
+
+            </p>
+          </div>
+        </div>
+
+
+      </div>
+      <!-- right side of form ends here -->
+
+    </div>
+    </div>
+
+  </form>
+
+
+  <!-- contact us section ends here -->
+</body>
+
+<script src="app.js">
+
+</script>
+
+</html>

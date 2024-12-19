@@ -1,0 +1,259 @@
+
+/* amnimation */
+
+
+.css-slideshow {
+  position: absolute;
+  filter: blur(3px);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  animation: fade 12s infinite;
+  opacity: 0;
+}
+
+.slide:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.slide:nth-child(2) {
+  animation-delay: 4s;
+}
+
+.slide:nth-child(3) {
+  animation-delay: 8s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* animation end */
+
+
+
+/* navbar */
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar.transparent {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.navbar.solid {
+  background-color:#020617;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* navbar ends */
+
+
+
+
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 1250px) {
+
+  #nav-content,
+  #signin {
+    display: none;
+  }
+
+  #menu-btn {
+    display: block;
+  }
+
+  .courselink {
+    font-size: 20px;
+  }
+}
+
+/* @media screen and (max-width:1024px) {
+    .text-section{
+      display: none;
+    }
+    
+  } */
+#signin {
+  cursor: pointer;
+}
+
+.links {
+  cursor: pointer;
+  margin-right: 15px;
+  transition: all 8s;
+  position: relative;
+  display: flex;
+  font-size: 18px;
+  align-items: center;
+}
+
+.links::after {
+  position: absolute;
+  content: "";
+  height: 4px;
+  width: 100%;
+  background: #fff;
+  bottom: -13px;
+  left: 0;
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+.links:hover::after {
+  opacity: 1;
+}
+
+
+.main {
+  position: relative;
+  height: 100vh;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+#git-logo {
+  height: 25px;
+}
+
+.text-overImage {
+  position: absolute;
+  top: 0;
+  color: white;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-container {
+  height: 100vh;
+}
+
+.main-container img {
+  object-fit: cover;
+}
+
+.logo {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.right-links {
+  margin-bottom: 10px;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.right-links img {
+  margin-right: 10px;
+
+}/* General Section Styling */
+.services-section {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.services-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  /* color: #333; */
+}
+
+/* Container for Cards */
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Individual Service Card */
+.service-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  padding: 20px;
+  text-align: center;
+  opacity: 0; /* Hidden initially */
+  transform: translateY(50px) scale(0.9) rotate(5deg); /* Start with transformations */
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.service-card.in-view {
+  opacity: 1; /* Fade in */
+  transform: translateY(0) scale(1) rotate(0); /* Reset transformations */
+}
+
+/* Card Icon */
+.service-card .icon {
+  font-size: 2.5rem;
+  color: #007bff;
+  margin-bottom: 15px;
+  transition: transform 0.5s ease;
+}
+
+.service-card.in-view .icon {
+  transform: rotate(360deg); /* Add a rotation to the icon when in view */
+}
+
+/* Card Title */
+.service-card h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Card Description */
+.service-card p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+}
