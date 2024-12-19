@@ -82,6 +82,60 @@ app.post('/signup', async (req, res) => {
   res.status(201).json({ message: 'Sign-Up successful! Please log in.' });
 });
 
+
+app.get('/portfolio', (req, res) => {
+  res.json({
+    totalValue: 50000,
+    totalTokens: 100
+  });
+});
+
+app.get('/market-trends', (req, res) => {
+  res.json({
+    tokenPrice: 500,
+    priceTrend: '+5% this week'
+  });
+});
+
+// Add this endpoint to your server.js
+app.get('/api/market-trends', (req, res) => {
+  const marketData = {
+    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+    prices: [100, 120, 130, 110, 140, 150, 160] // Replace with real data from your system
+  };
+  res.json(marketData);
+});
+
+
+app.get('/investment-opportunities', (req, res) => {
+  res.json([
+    { property: 'Property 1', price: 100000, tokensAvailable: 10 },
+    { property: 'Property 2', price: 250000, tokensAvailable: 25 },
+    { property: 'Property 3', price: 500000, tokensAvailable: 50 }
+  ]);
+});
+
+app.get('/transaction-history', (req, res) => {
+  res.json([
+    { description: 'Bought 5 tokens for Property 1 on 12/01/2024' },
+    { description: 'Sold 2 tokens for Property 2 on 12/05/2024' },
+    { description: 'Bought 10 tokens for Property 3 on 12/10/2024' }
+  ]);
+});
+
+app.get('/account-management', (req, res) => {
+  res.json({
+    name: 'John Doe',
+    email: 'johndoe@example.com'
+  });
+});
+
+app.get('/analytics', (req, res) => {
+  res.json({
+    roi: 10
+  });
+});
+
 // Start Server
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);

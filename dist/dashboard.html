@@ -1,11 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TokenTurf Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+  <link rel="stylesheet" href="othercss.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>Dashboard</h1>
+  <header>
+    <div class="navbar transparent bg-transparent text-white fixed top-0 w-full flex items-center justify-between px-8 md:px-14 lg:px-[120px] py-4 z-20">
+      <div class="logo">
+        <a href="dashboard.html">
+          <h1 class="text-white text-2xl font-bold">TOKENTURF</h1>
+        </a>
+      </div>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="#portfolio">Portfolio Overview</a></li>
+          <li><a href="#market-trends">Market Trends</a></li>
+          <li><a href="#investment-opportunities">Investment Opportunities</a></li>
+          <li><a href="#transaction-history">Transaction History</a></li>
+          <li><a href="#account-management">Account Management</a></li>
+          <li><a href="#analytics">Analytics</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="mt-24">
+    <section id="portfolio" class="section-container">
+      <h2>Portfolio Overview</h2>
+      <div id="portfolio-summary">
+        <p>Total Value: <span id="portfolio-value">INR 5,00,000</span></p>
+        <p>Total Tokens: <span id="total-tokens">100</span></p>
+      </div>
+    </section>
+
+    <section id="market-trends" class="section-container">
+      <h2>Market Trends</h2>
+      <div class="chart-container">
+        <canvas id="marketTrendsChart"></canvas>
+      </div>
+      <div id="market-data">
+        <p>Token Price: <span id="token-price">INR 5000</span></p>
+        <p>Price Trend: <span id="price-trend">+5% this week</span></p>
+      </div>
+    </section>
+
+    <section id="investment-opportunities" class="section-container">
+      <h2>Investment Opportunities</h2>
+      <div id="investment-list">
+        <ul>
+          <li>Property 1: INR 100,000 - 10 tokens available</li>
+          <li>Property 2: INR 250,000 - 25 tokens available</li>
+          <li>Property 3: INR 500,000 - 50 tokens available</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="transaction-history" class="section-container">
+      <h2>Transaction History</h2>
+      <div id="transactions">
+        <ul>
+          <li>Bought 5 tokens for Property 1 on 12/01/2024</li>
+          <li>Sold 2 tokens for Property 2 on 12/05/2024</li>
+          <li>Bought 10 tokens for Property 3 on 12/10/2024</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="account-management" class="section-container">
+      <h2>Account Management</h2>
+      <div id="account-details">
+        <p>Name: <span id="account-name">Jay Dutta</span></p>
+        <p>Email: <span id="account-email">jaydutta@mail.com</span></p>
+      </div>
+    </section>
+
+    <section id="analytics" class="section-container">
+      <h2>Analytics</h2>
+      <div id="roi">
+        <p>ROI: <span id="roi">+10%</span></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2024 TokenTurf</p>
+  </footer>
+
+  <script src="dashboard.js"></script>
 </body>
 </html>

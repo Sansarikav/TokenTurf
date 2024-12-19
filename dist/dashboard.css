@@ -1,0 +1,152 @@
+/* General body and layout */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1f1e47; /*Soft background color */
+    color: #333;
+}
+
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1f2937;
+    /* Darker header background */
+    color: white;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1.5rem;
+}
+
+header nav ul li a {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #00bcd4;
+    /* Accent color on hover */
+}
+
+/* Main Content Section */
+main {
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+section {
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #00bcd4;
+    /* Underline for section titles */
+    padding-bottom: 0.5rem;
+}
+
+/* Subsection styling */
+#portfolio-summary,
+#market-data,
+#investment-list,
+#transactions,
+#account-details,
+#roi {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+#investment-list ul,
+#transactions ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#investment-list li,
+#transactions li {
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+}
+
+#investment-list li:hover,
+#transactions li:hover {
+    background-color: #f0f4f8;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Chart Styling */
+#marketTrendsChart {
+    width: 100%;
+    height: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #202020;
+    color: white;
+    margin-top: 2rem;
+    border-top: 1px solid #333;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 0.8rem;
+        margin-top: 1rem;
+    }
+
+    main {
+        padding: 2rem 1rem;
+    }
+
+    section {
+        padding: 1.5rem;
+    }
+
+    footer {
+        padding: 1.5rem;
+    }
+}

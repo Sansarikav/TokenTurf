@@ -10,6 +10,8 @@
     "vite": "^6.0.1"
   },
   "dependencies": {
+    "chart": "^0.1.2",
+    "chart.js": "^4.4.7",
     "express": "^4.21.2"
   }
 }
