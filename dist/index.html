@@ -18,9 +18,9 @@
     <!-- <img class="object-fill  w-full h-full" src="assets/images/main-bg2.avif" alt=""> -->
 
     <div class="css-slideshow">
-      <div class="slide" style="background-image: url('assets/images/image1.jpeg');"></div>
-      <div class="slide" style="background-image: url('assets/images/image2.jpeg');"></div>
-      <div class="slide" style="background-image: url('assets/images/image3.jpeg');"></div>
+      <div class="slide" style="background-image: url('assets/images/image1.webp');"></div>
+      <div class="slide" style="background-image: url('assets/images/image2.webp');"></div>
+      <div class="slide" style="background-image: url('assets/images/image3.webp');"></div>
     </div>
 
 
@@ -44,10 +44,10 @@
 
           <ul id="nav-content"
             class="lg:flex gap-4 items-center font-semibold tracking-wider lg:text-[15px] mr-4 md:text-[10px]">
-            <li class="links relative">
+            <!-- <li class="links relative">
               <a href="#whyus">WHY US</a>
             </li>
-            <li class="links relative">ABOUT US</li>
+            <li class="links relative">ABOUT US</li> -->
             <li class="links relative">
               <a href="#services">
                 OUR SERVICES
@@ -67,8 +67,7 @@
               alt="" />
           </div>
 
-          <div id="signin"
-            class="md:flex mr-2 items-center justify-evenly py-3    w-[124px] text-white rounded-full ">
+          <div id="signin" class="md:flex mr-2 items-center justify-evenly py-3    w-[124px] text-white rounded-full ">
             <!-- <div>
               <img src="assets/images/whiteArrow.svg" alt="" />
             </div> -->
@@ -86,8 +85,8 @@
   <section class="text-section">
     <div class="main text-overImage  w-full">
       <!-- <div class=" w-full"> -->
-      <div class="bg-[#000000a7] flex flex-col items-center rounded-xl p-5">
-        <h1 class="text-[40px] text-white font-sans">
+      <div class="flex flex-col items-center rounded-xl p-5">
+        <h1 class="text-[45px] stroke-black logo font-extrabold text-white font-sans">
           Revolutionizing Real Estate Ownership with Blockchain
         </h1>
 
@@ -105,11 +104,7 @@
   <section id="services" class="bg-slate-900 services-section">
     <h2 class="text-gray-300">Our Services</h2>
     <div class="services-container">
-      <div class="service-card">
-        <div class="icon">&#128736;</div>
-        <h3>Blockchain-Based Property Listings</h3>
-        <p>List your property securely on the blockchain with complete transparency and immutability.</p>
-      </div>
+     
       <div class="service-card">
         <div class="icon">&#128179;</div>
         <h3>Smart Contract Transactions</h3>
@@ -138,23 +133,81 @@
 
   <!-- Contact us section starts here  -->
 
-  <form id="contactus">
-    <div class="flex overflow-hidden  mt-10 pb-32 max-w-2xl h-auto   mx-auto ">
+  <form id="contactus" class="w-full bg-slate-700">
+    <div class="flex overflow-hidden  justify-between px-10 h-auto   mx-auto ">
+
+      <!-- right side of form -->
+      <div class="bg-slate-700 space-y-0 flex flex-col justify-center   w-[55rem] p-6  right-side">
+
+        <div>
+
+          <h2 class="text-2xl font-bold mb-4 text-slate-300">Contact Information</h2>
+          <p class="text-gray-500">We are open for any suggestion or question.</p>
+        </div>
+
+
+        <div class="pt-5 w-full h-full  text-slate-300 flex  gap-8">
+
+          <!-- Name Field -->
+          <div class="flex-col flex ">
+
+            <div>
+              <p class="flex right-links items-center">
+                <img src="assets/images/location-logo.svg" alt="">
+                <span class="font-bold mr-2 ">Address :</span>
+                Acropolis Institute Of Technology And Research
+
+              </p>
+            </div>
+            <div>
+              <p class="flex right-links items-center">
+                <img src="assets/images/call-logo.svg" alt="">
+                <span class="font-bold mr-2 ">Phone :</span>
+                +91 98989-89898
+
+              </p>
+            </div>
+          </div>
+          <div class="flex-col flex ">
+
+            <div>
+              <p class="flex right-links items-center">
+                <img src="assets/images/mail-logo.svg" alt="">
+                <span class=" font-bold mr-2 ">Email :</span>
+                tokenturf@gmail.com
+
+              </p>
+            </div>
+
+            <div>
+              <p class="flex right-links items-center">
+                <img id="git-logo" src="assets/images/github-logo.svg" alt="">
+                <span class="font-bold mr-2 ">Github :</span>
+                
+                <a href="https://github.com/Sansarikav/TokenTurf">TokenTurf</a>
+
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <!-- right side of form ends here -->
 
       <!-- left side of form -->
-      <div class="space-y-6 bg-slate-700 w-[20rem] text-gray-200 p-6   text-wrap  ">
+      <div class="space-y-2 bg-slate-700 text-gray-200 p-6 w-[50rem]  text-wrap  " style="border-left: 2px solid gray;">
+
 
         <h1 class="text-3xl font-bold text-slate-300">Write Us</h1>
         <!-- Name Field -->
         <div>
-          <!-- <label for="name" class="block text-sm font-medium text-gray-300 mb-1">Your </label> -->
           <input type="text" id="name" name="name"
             class="block w-full border border-gray-600 outline-none rounded-md shadow-sm bg-gray-900 text-gray-200 px-4 py-2 focus:ring-blue-500 focus:border-blue-500"
             placeholder="Name" required>
         </div>
         <!-- Email Field -->
         <div>
-          <!-- <label for="email" class="block text-sm font-medium text-gray-300 mb-1"> Address</label> -->
           <input type="email" id="email" name="email"
             class="block w-full border border-gray-600 outline-none rounded-md shadow-sm bg-gray-900 text-gray-200 px-4 py-2 focus:ring-blue-500 focus:border-blue-500"
             placeholder="Email" required>
@@ -181,58 +234,6 @@
         </div>
       </div>
       <!-- left side of form ends here -->
-
-      <!-- right side of form -->
-      <div class="bg-slate-900 flex flex-col justify-center items-center   w-[20rem] p-6  right-side">
-
-        <div>
-
-          <h2 class="text-2xl font-bold mb-4 text-slate-300">Contact Information</h2>
-          <p class="text-gray-500">We are open for any suggestion or question.</p>
-        </div>
-
-
-        <div class="pt-5 w-full h-full text-slate-300 flex flex-col gap-8">
-
-          <!-- Name Field -->
-          <div>
-            <p class="flex right-links items-center">
-              <img src="assets/images/location-logo.svg" alt="">
-              <span class="font-bold mr-2 ">Address :</span>
-              address
-
-            </p>
-          </div>
-          <div>
-            <p class="flex right-links items-center">
-              <img src="assets/images/call-logo.svg" alt="">
-              <span class="font-bold mr-2 ">Phone :</span>
-              phone number
-
-            </p>
-          </div>
-          <div>
-            <p class="flex right-links items-center">
-              <img src="assets/images/mail-logo.svg" alt="">
-              <span class="font-bold mr-2 ">Email :</span>
-              email id
-
-            </p>
-          </div>
-
-          <div>
-            <p class="flex right-links items-center">
-              <img id="git-logo" src="assets/images/github-logo.svg" alt="">
-              <span class="font-bold mr-2 ">Github :</span>
-              github link
-
-            </p>
-          </div>
-        </div>
-
-
-      </div>
-      <!-- right side of form ends here -->
 
     </div>
     </div>

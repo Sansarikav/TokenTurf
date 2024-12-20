@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
+  <!-- <header>
     <div class="navbar transparent bg-transparent text-white fixed top-0 w-full flex items-center justify-between px-8 md:px-14 lg:px-[120px] py-4 z-20">
       <div class="logo">
         <a href="dashboard.html">
@@ -27,7 +27,63 @@
         </ul>
       </nav>
     </div>
-  </header>
+  </header> -->
+
+  <nav>
+    <div
+      class="navbar transparent bg-transparent z-20 text-white fixed top-0 h-32  items-center justify-between w-full flex">
+      <div class="block ">
+        <div class="text-white text-[38px]  font-bold logo">
+          <a href="dashboard.html">
+
+            TOKENTURF
+          </a>
+        </div>
+
+      </div>
+
+
+      <div class="flex">
+<!-- 
+
+        <ul >
+          <li class="links relative">
+            <a href="#whyus">WHY US</a>
+          </li>
+          <li class="links relative">ABOUT US</li>
+          <li class="links relative">
+            <a href="#services">
+              OUR SERVICES
+            </a>
+          </li>
+          <li class="links relative">
+            <a href="#contactus">
+
+              CONTACT US
+            </a>
+          </li>
+        </ul>
+
+        <div>
+          <img class="hidden" id="menu-btn"
+            src="https://cdn.prod.website-files.com/64f9d86c3da1bd10b13c772c/659ea8d569be4284e5cfbc83_PRIMARY%20NAV%20ITEM.svg"
+            alt="" />
+        </div> -->
+
+        
+        <ul 
+        class="lg:flex gap-1 items-center font-semibold    ">
+          <li class="links relative text-nowrap"><a href="#portfolio">Portfolio Overview</a></li>
+          <li class="links relative text-nowrap"><a href="#market-trends">Market Trends</a></li>
+          <li class="links relative text-nowrap"><a href="#investment-opportunities">Investment Opportunities</a></li>
+          <li class="links relative text-nowrap"><a href="#transaction-history">Transaction History</a></li>
+          <li class="links relative text-nowrap"><a href="#account-management">Account Management</a></li>
+          <li class="links relative text-nowrap"><a href="#analytics">Analytics</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
 
   <main class="mt-24">
     <section id="portfolio" class="section-container">
@@ -37,6 +93,10 @@
         <p>Total Tokens: <span id="total-tokens">100</span></p>
       </div>
     </section>
+
+
+    
+
 
     <section id="market-trends" class="section-container">
       <h2>Market Trends</h2>
@@ -92,5 +152,6 @@
   </footer>
 
   <script src="dashboard.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
